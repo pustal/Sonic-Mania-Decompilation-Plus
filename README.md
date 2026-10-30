@@ -24,7 +24,9 @@ We do not condone using this project as a means for piracy in any form. This pro
 
 If you want to transfer your save from the official PC versions, you can just copy your savedata into the folder containing the decompilation!
 
-# Plus: retro games next to Sonic Mania
+# Plus:
+
+## Retro games next to Sonic Mania
 This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv5-Decompilation-Plus) engine, which plays **Sonic the Hedgehog, Sonic 2 and Sonic CD** next to Sonic Mania from your own data packs (Sonic Origins' and/or the earlier releases'), with:
 * the **Plus menu** (press Select, Tab on a keyboard): switch games, achievements, settings;
 * **save slots and Sonic Origins' modes** (Anniversary, Classic, Mirror, Boss Rush) and coins;
@@ -42,6 +44,11 @@ retro/
 | soniccd-classic.rsdk
 | soniccd-origins.rsdk
 ```
+
+You can switch the current game playing in the 
+
+## Extra features menu:
+Access the extra features menu at any time, by pressing the "select" button.
 
 # Additional Tweaks
 * Added a built-in mod loader and API calls to enable a much smoother modding experience.
