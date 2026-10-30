@@ -1,3 +1,5 @@
+![header](header.png?raw=true)
+
 # Sonic Mania Decompilation Plus
 
 Fork of [RSDKModding](https://github.com/RSDKModding/)'s [Sonic Mania Decompilation](https://github.com/RSDKModding/Sonic-Mania-Decompilation) that ports features I introduced in my [SonicWebMania](https://github.com/pustal/SonicWebMania) project.
