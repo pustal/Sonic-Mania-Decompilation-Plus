@@ -1,6 +1,6 @@
 # Sonic Mania Decompilation Plus
 
-For of [RSDKModding](https://github.com/RSDKModding/)'s [Sonic Mania Decompilation](https://github.com/RSDKModding/Sonic-Mania-Decompilation) that ports features I introduced in my [SonicWebMania](https://github.com/pustal/SonicWebMania) project.
+Fork of [RSDKModding](https://github.com/RSDKModding/)'s [Sonic Mania Decompilation](https://github.com/RSDKModding/Sonic-Mania-Decompilation) that ports features I introduced in my [SonicWebMania](https://github.com/pustal/SonicWebMania) project.
 
 It uses [RSDK v5U Decompilation Plus](https://github.com/pustal/RSDKv5-Decompilation-Plus), my own fork of [RSDKModding](https://github.com/RSDKModding/)'s [RSDK v5U Decompilation](https://github.com/RSDKModding/RSDKv5-Decompilation).
 
