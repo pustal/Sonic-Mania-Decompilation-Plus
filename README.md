@@ -16,6 +16,14 @@ We do not condone using this project as a means for piracy in any form. This pro
 
 If you want to transfer your save from the official PC versions, you can just copy your savedata into the folder containing the decompilation!
 
+# Plus: retro games next to Sonic Mania
+This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv5-Decompilation-Plus) engine, which plays **Sonic the Hedgehog, Sonic 2 and Sonic CD** next to Sonic Mania from your own data packs (Sonic Origins' and/or the earlier releases'), with:
+* the **Plus menu** (press Select, Tab on a keyboard): switch games, achievements, settings;
+* **save slots and Sonic Origins' modes** (Anniversary, Classic, Mirror, Boss Rush) and coins;
+* **Sonic Mania's music and sounds** filling what the retro packs lack (the Origins packs have no audio).
+
+Put the packs in a `retro` folder next to `Data.rsdk` (`sonic1-origins.rsdk`, `sonic1-classic.rsdk`, ...): see the engine's README for the names and details. No game data is included.
+
 # Additional Tweaks
 * Added a built-in mod loader and API calls to enable a much smoother modding experience.
 * Added support for targeting RSDKv5U rather than standalone RSDKv5
@@ -32,7 +40,7 @@ This project uses [CMake](https://cmake.org/), a versatile building system that 
 Instead, you will need to clone the repository using Git, which you can get [here](https://git-scm.com/downloads).
 
 Clone the repo **recursively**, using:
-`git clone --recursive https://github.com/RSDKModding/Sonic-Mania-Decompilation`
+`git clone --recursive https://github.com/pustal/Sonic-Mania-Decompilation-Plus`
 
 If you've already cloned the repo, run this command inside of the repository:
 ```git submodule update --init --recursive```
@@ -91,6 +99,7 @@ The following cmake arguments are available when compiling:
 - `RETRO_DISABLE_PLUS`: Whether or not to disable the Plus DLC. Takes a boolean (on/off): build with `on` when compiling for distribution. Defaults to `off`.
 - `RETRO_MOD_LOADER`: Enables or disables the mod loader. Takes a boolean, defaults to `on`.
 - `RETRO_MOD_LOADER_VER`: Manually sets the mod loader version. Takes an integer, defaults to the current latest version.
+- `RETRO_PLUS`: Enables the engine's Plus features (retro games, the Plus menu, Sonic Mania's audio for the retro games). Not the Sonic Mania Plus DLC (see `RETRO_DISABLE_PLUS`). Takes a boolean, defaults to `on`.
 - `RETRO_SUBSYSTEM`: *Only change this if you know what you're doing.* Changes the subsystem that RSDKv5 will be built for. Defaults to the most standard subsystem for the platform.
 
 ### Sonic Mania flags
