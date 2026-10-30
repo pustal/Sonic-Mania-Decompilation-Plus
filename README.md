@@ -1,4 +1,10 @@
-# **SUPPORT THE OFFICIAL RELEASE OF SONIC MANIA (PLUS)**
+# Sonic Mania Decompilation Plus
+
+For of [RSDKModding](https://github.com/RSDKModding/)'s [Sonic Mania Decompilation](https://github.com/RSDKModding/Sonic-Mania-Decompilation) that ports features I introduced in my [SonicWebMania](https://github.com/pustal/SonicWebMania) project.
+
+It uses [RSDK v5U Decompilation Plus](https://github.com/pustal/RSDKv5-Decompilation-Plus), my own fork of [RSDKModding](https://github.com/RSDKModding/)'s [RSDK v5U Decompilation](https://github.com/RSDKModding/RSDKv5-Decompilation).
+
+## **SUPPORT THE OFFICIAL RELEASE OF SONIC MANIA (PLUS)**
 + Without assets from the official releases, this decompilation will not run.
 
 + You can get the official release of Sonic Mania (Plus) from:
@@ -135,22 +141,3 @@ Author=Ducky
 Version=1.0.0
 TargetVersion=5
 ```
-
-### Q: I found a bug!
-A: Submit an issue in the Issues tab and we might look into it. Keep in mind that this is a decompilation, so bugs that exist in official releases will most likely not be fixed here.
-
-### Q: Will you add support for the Netflix Games version of Mania?
-A: No. There are several reasons for this: the APIs introduced in the port that we'd have to deal with, the pressure of having to maintain support for a version that's being frequently updated, concerns over piracy, and a general disinterest in the port. If you want to play the decomp on mobile with touch controls, there's a [mod](https://github.com/RSDKModding/RSDKv5-Example-Mods/tree/master/ManiaTouchControls) for that you can use instead.
-
-### Q: Will you do a decompilation for Sonic CD (2011) and/or Sonic 1/2 (2013)?
-A: I already have! You can find Sonic CD [here](https://github.com/RSDKModding/RSDKv3-Decompilation) and Sonic 1/2 [here](https://github.com/RSDKModding/RSDKv4-Decompilation).
-
-### Q: Are there anymore decompilation projects in the works, such as Sonic Origins/Sonic 3 & Knuckles?
-A: Absolutely not. This project took about 1 and a half years to do, and doing Sonic 3 & Knuckles would take equally as long, if not longer, as it's not only larger in scope, but Origins' hybrid codebase makes it harder to read. Between our other decompilation projects and this one, we're done with decompiling, at least for the time being. We would also like to expand our horizons beyond Sonic going forward, and we don't wish to spend forever just playing catchup with Sega's official releases. Please do not expect any more decompilations from us, Sonic or otherwise!
-
-# Special Thanks
-* [st×tic](https://github.com/stxticOVFL) for leading ModAPI development, porting to other platforms, general decompilation assistance, helping me fix bugs, tweaking up my sometimes sloppy code and generally being really helpful and fun to work with on this project
-* Everyone in the [Retro Engine Modding Server](https://dc.railgun.works/retroengine) for being supportive of me and for giving me a place to show off these things that I've found
-
-# Contact:
-Join the [Retro Engine Modding Discord Server](https://dc.railgun.works/retroengine) for any extra questions you may need to know about the decompilation or modding it.
