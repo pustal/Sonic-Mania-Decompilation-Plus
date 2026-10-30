@@ -30,6 +30,17 @@ This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv
 
 Put the packs in a `retro` folder next to `Data.rsdk` (`sonic1-origins.rsdk`, `sonic1-classic.rsdk`, ...): see the engine's README for the names and details. No game data is included.
 
+```
+Data.rsk
+retro/
+| sonic1-classic.rsdk
+| sonic1-origins.rsdk
+| sonic2-classic.rsdk
+| sonic2-origins.rsdk
+| soniccd-classic.rsdk
+| soniccd-origins.rsdk
+```
+
 # Additional Tweaks
 * Added a built-in mod loader and API calls to enable a much smoother modding experience.
 * Added support for targeting RSDKv5U rather than standalone RSDKv5
