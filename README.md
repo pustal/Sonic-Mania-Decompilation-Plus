@@ -48,7 +48,7 @@ retro/
 You can switch the current game playing in the 
 
 ## Extra features menu:
-Access the extra features menu at any time, by pressing the "select" button.
+Access the extra features menu at any time, by pressing the tab key or the "select" button.
 
 # Additional Tweaks
 * Added a built-in mod loader and API calls to enable a much smoother modding experience.
