@@ -96,6 +96,9 @@ Install the following dependencies: then follow the [compilation steps below](#c
 
 #### (make sure to [install GL shaders!](#q-why-arent-videosfilters-working-while-using-gl))
 
+### MacOS
+Check the [MacOS dependencies README on RSDK v5U Decompilation Plus](https://github.com/pustal/RSDKv5-Decompilation-Plus/tree/master/dependencies/mac). You'll need `Game.dylib` to accompany the app.
+
 ### Switch
 [Setup devKitPro](https://devkitpro.org/wiki/Getting_Started), then run the following:
 - `(dkp-)pacman -Syuu switch-dev switch-libogg switch-libtheora switch-sdl2 switch-glad`
@@ -136,6 +139,10 @@ The following cmake arguments are available when compiling:
 - `MANIA_PRE_PLUS`: Whether or not to build a pre-plus version of Sonic Mania. Takes a boolean, defaults to `off`.
 - `GAME_INCLUDE_EDITOR`: Whether or not to include functions for use in certain RSDKv5 scene editors. Takes a boolean, defaults to `on`.
 - `GAME_VERSION`: Which release version of Sonic Mania to target for. Takes an integer, defaults to `3` when `MANIA_PRE_PLUS` is enabled, and `6` otherwise (last steam release).
+
+### MacOS
+Open `Sonic-Mania-Decompilation-Plus/SonicMania.xcodeproj`.
+Choose the SonicMania scheme, set it to Release, then Clean Build Folder and Build. You'll need `Game.dylib` from the dependencies section to accompany the app.
 
 ### Other Platforms
 The only directly supported platforms are those listed above. Since Mania is very easy to build, requiring no additional dependencies, virtually any platform that can run RSDKv5 can compile Mania easily.
