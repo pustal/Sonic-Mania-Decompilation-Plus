@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C96881E725DF3C5800BEE4B8"
+               BlueprintIdentifier = "C9CDD24428A3BE8B00E4C97E"
                BuildableName = "Game.dylib"
-               BlueprintName = "SonicMania"
+               BlueprintName = "SonicMania_v5U"
                ReferencedContainer = "container:SonicMania.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C96881E725DF3C5800BEE4B8"
+            BlueprintIdentifier = "C9CDD24428A3BE8B00E4C97E"
             BuildableName = "Game.dylib"
-            BlueprintName = "SonicMania"
+            BlueprintName = "SonicMania_v5U"
             ReferencedContainer = "container:SonicMania.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
