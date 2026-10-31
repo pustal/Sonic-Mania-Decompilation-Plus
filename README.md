@@ -30,7 +30,8 @@ If you want to transfer your save from the official PC versions, you can just co
 This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv5-Decompilation-Plus) engine, which plays **Sonic the Hedgehog, Sonic 2 and Sonic CD** next to Sonic Mania from your own data packs (Sonic Origins' and/or the earlier releases'), with:
 * the **Plus menu** (press Select, Tab on a keyboard): switch games, achievements, settings;
 * **save slots and Sonic Origins' modes** (Anniversary, Classic, Mirror, Boss Rush) and coins;
-* **Sonic Mania's music and sounds** filling what the retro packs lack (the Origins packs have no audio).
+* **Sonic Mania's music and sounds** filling what the retro packs lack (the Origins packs have no audio), and optionally **Mania's remixes** of Green Hill, Chemical Plant, Oil Ocean, Stardust Speedway and Metallic Madness even over the earlier releases' originals;
+* **touch controls on Android**: the PAD button at the top right shows a pad and buttons over the game, with an adjustable opacity.
 
 Put the packs in a `retro` folder next to `Data.rsdk` (`sonic1-origins.rsdk`, `sonic1-classic.rsdk`, ...): see the engine's README for the names and details. No game data is included.
 
