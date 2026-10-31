@@ -147,7 +147,9 @@ Choose the SonicMania scheme, set it to Release, then Clean Build Folder and Bui
 ### Other Platforms
 The only directly supported platforms are those listed above. Since Mania is very easy to build, requiring no additional dependencies, virtually any platform that can run RSDKv5 can compile Mania easily.
 
-However, there are a multitude of ports listed in the **[RSDKv5 repository.](https://github.com/RSDKModding/RSDKv5-Decompilation)**
+Check my [SonicWebMania](https://github.com/pustal/SonicWebMania) project for a WebOS port.
+
+However, there are a multitude of ports listed in the **[RSDKv5 repository.](https://github.com/RSDKModding/RSDKv5-Decompilation)**. Note that these are ports of the original RSDKv5 and Sonic Mania Decompilations and not this Plus version.
 
 # FAQ
 ### Q: Why aren't videos/filters working while using GL?
