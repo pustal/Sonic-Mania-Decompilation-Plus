@@ -29,6 +29,7 @@ If you want to transfer your save from the official PC versions, you can just co
 ## Retro games next to Sonic Mania
 This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv5-Decompilation-Plus) engine, which plays **Sonic the Hedgehog, Sonic 2 and Sonic CD** next to Sonic Mania from your own data packs (Sonic Origins' and/or the earlier releases'), with:
 * the **Plus menu** (press Select, Tab on a keyboard): switch games, achievements, settings;
+* the **Plus DLC off by default**, as the decompilation's licence asks of every build: Sonic Mania Plus (Encore mode, Mighty, Ray...) and Sonic Origins Plus (Amy, and Knuckles in Sonic CD). If you own them, turn them on in the Plus menu's Settings (**Plus DLC**, press OK twice; the game restarts) or with `plusDLC=y` under `[Game]` in `Settings.ini`;
 * **save slots and Sonic Origins' modes** (Anniversary, Classic, Mirror, Boss Rush) and coins;
 * **Sonic Mania's music and sounds** filling what the retro packs lack (the Origins packs have no audio), and optionally **Mania's remixes** of Green Hill, Chemical Plant, Oil Ocean, Stardust Speedway and Metallic Madness even over the earlier releases' originals;
 * **touch controls on Android**: the PAD button at the top right shows a pad and buttons over the game, with an adjustable opacity.
@@ -126,7 +127,7 @@ The following cmake arguments are available when compiling:
 
 ### RSDKv5 flags
 - `RETRO_REVISION`: What revision to compile for. Takes an integer, defaults to `3` (RSDKv5U).
-- `RETRO_DISABLE_PLUS`: Whether or not to disable the Plus DLC. Takes a boolean (on/off): build with `on` when compiling for distribution. Defaults to `off`.
+- `RETRO_DISABLE_PLUS`: Forces the Plus DLC off, with no way to turn it on. Takes a boolean (on/off), defaults to `off`. Without it the DLC is still off by default and only the player turns it on (Settings.ini `Game:plusDLC`, or the Plus menu), as the licence allows.
 - `RETRO_MOD_LOADER`: Enables or disables the mod loader. Takes a boolean, defaults to `on`.
 - `RETRO_MOD_LOADER_VER`: Manually sets the mod loader version. Takes an integer, defaults to the current latest version.
 - `RETRO_PLUS`: Enables the engine's Plus features (retro games, the Plus menu, Sonic Mania's audio for the retro games). Not the Sonic Mania Plus DLC (see `RETRO_DISABLE_PLUS`). Takes a boolean, defaults to `on`.
