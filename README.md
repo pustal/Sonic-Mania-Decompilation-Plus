@@ -36,6 +36,8 @@ This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv
 
 Put the packs in a `retro` folder next to `Data.rsdk` (`sonic1-origins.rsdk`, `sonic1-classic.rsdk`, ...): see the engine's README for the names and details. No game data is included.
 
+The RSDK files should be placed and renamed as following:
+
 ```
 Data.rsk
 retro/
@@ -46,6 +48,70 @@ retro/
 | soniccd-classic.rsdk
 | soniccd-origins.rsdk
 ```
+And can be sourced as following:
+
+| Pack | Where it comes from |
+|---|---|
+| Sonic Origins | `Sonic1u.rsdk`, `Sonic2u.rsdk`, `SonicCDu.rsdk` from the game's install folder (`retro`) |
+| Earlier release | Sonic 1 and 2 (2013): `Data.rsdk` (Android: `Data.rsdk.xmf` in the APK). Sonic CD (2011): `Data.rsdk.xmf` from the mobile app's APK, or `Data.rsdk` from Steam |
+
+How each game plays depends on what you upload:
+
+| Packs | Result |
+|---|---|
+| Origins + earlier release | The Origins game, with the earlier release's music and sound effects. The sounds Origins added (Drop Dash, Knuckles' and Amy's moves) come from Sonic Mania when it is installed, otherwise they are silent |
+| Origins only | The Origins game. Origins keeps its audio outside these packs, so without Sonic Mania it is silent; with it, see **Sound from Sonic Mania** below |
+| Earlier release only | Sonic 1 and 2: that release. Sonic CD: the mobile pack is the 2011 game, with its own menus, save slots and Time Attack. The Steam pack can't be played alone (its scripts are stored the way the PC build named them, which the engine doesn't load); it only adds sound to the Origins game |
+
+- **Sound from Sonic Mania.** With Sonic Mania's `Data.rsdk` installed, whatever music or
+  sound effect a retro game's packs lack comes from Mania's pack (on by default; a
+  checkbox on the page turns it off). The game's own packs always win.
+  - Sound effects: Mania's file of the same name (jumps, rings, springs, the Drop Dash,
+    Knuckles' glide and climb...), or its nearest one; Amy's hammer uses Mania's hits
+    and jumps.
+  - Music: the zones and jingles Mania remixed, with Mania's loop points: Green Hill,
+    Chemical Plant and Oil Ocean (Mania's act 1 remix in act 1, its act 2 remix from
+    act 2 on), Stardust Speedway and Metallic Madness (by time period), plus
+    invincibility, speed shoes, act clear, boss, drowning, game over and Super.
+  - **Sonic Mania remixes** (off by default): those zones play Mania's remix even when the
+    earlier release's pack has the original, and their speed shoes play Mania's jingle.
+  - **Similar Mania music** (off by default): zones Mania has no version of get a Mania track
+    of similar feel, such as Emerald Hill with Green Hill, Casino Night with Studiopolis,
+    Aquatic Ruin and Tidal Tempest with Hydrocity, Mystic Cave and Quartz Quadrant with
+    Lava Reef. The title, special stage and credits use Mania's own.
+
+  A Mania track that only shares a name with a retro one (its title screen, credits) is
+  not played unless similar music is on.
+- **Save slots.** Starting Sonic 1 or 2 opens a save screen: play without saving, or
+  pick one of four slots to continue (zone, character, lives and emeralds are shown),
+  start a new game, or delete it (press OK twice). New games then choose the character:
+  Sonic, Tails, Knuckles, Sonic & Tails, and with the Origins packs Knuckles & Tails,
+  Amy and Amy & Tails. The games save their own progress as you play (at the end of
+  each act), as the 2013 releases did. The 2013 packs' title screen cannot start a game
+  by itself (those releases used native menus), so for them the save screen opens when
+  the title would start its demo. Sonic CD goes to its own 2011 menu instead: its save
+  slots, Time Attack and extras. The mobile pack's menus work with the buttons, and also
+  take a touch (a mouse click on a computer).
+- **Sonic Origins' modes.** With the Origins packs the save screen starts with a mode:
+  - **Anniversary**: extra lives become coins, no time limit;
+  - **Classic**: lives and the 10-minute time limit (and, in Sonic 1, no spin dash);
+  - **Mirror**: Anniversary rules with the stages mirrored and left/right swapped (the HUD
+    and title cards stay readable);
+  - **Boss Rush** (experimental): the bosses one after another, without saving; a defeat
+    retries the fight. Sonic 1's Boss Rush stages are whole acts, so, as Origins does,
+    the port starts you at the act's last checkpoint, next to the boss. Moving on to the
+    next boss is untested.
+
+  Coins are kept in `RetroCoins.ini` in the app's data folder, shared by the three games as
+  in Origins. Missions, the Museum and Story mode are part of Origins' own program, not of
+  its packs, so they are not available.
+- **Achievements.** Each game has its own twelve achievements (those of the 2013 and
+  2011 releases, which the Origins packs share), unlocked as you play: a notice shows
+  each one, the Back menu's Achievements page lists them, and they are kept in the game's
+  `Achievements.bin`. Sonic CD's own menu entry opens the same list (its Leaderboards
+  entry needs an online service, so it only says so).
+- Sonic 3 & Knuckles from Origins cannot be played: its game code lives in the Origins
+  program, not in its pack.
 
 You can switch the current game playing in the 
 
