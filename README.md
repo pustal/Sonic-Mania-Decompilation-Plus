@@ -141,6 +141,13 @@ The following cmake arguments are available when compiling:
 - `GAME_INCLUDE_EDITOR`: Whether or not to include functions for use in certain RSDKv5 scene editors. Takes a boolean, defaults to `on`.
 - `GAME_VERSION`: Which release version of Sonic Mania to target for. Takes an integer, defaults to `3` when `MANIA_PRE_PLUS` is enabled, and `6` otherwise (last steam release).
 
+### Windows
+```
+:: (cmake --build build --config Release --target clean)
+cmake -B build -DCMAKE_TOOLCHAIN_FILE=<vcpkg dir>/scripts/buildsystems/vcpkg.cmake -DVCPKG_TARGET_TRIPLET=<triplet option> :: (example: `cmake -B build -DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake -DVCPKG_TARGET_TRIPLET=x64-windows-static`)
+cmake --build build --config Release
+```
+
 ### MacOS
 Open `Sonic-Mania-Decompilation-Plus/SonicMania.xcodeproj`.
 Choose the SonicMania scheme, set it to Release, then Clean Build Folder and Build. It'll generate `Game.dylib` to accompany the RSDKv5U app generated in the dependencies section.
