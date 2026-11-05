@@ -72,6 +72,23 @@ retro/
 | | SCD_music.awb
 ```
 
+Audio files have the following contents:
+
+| File | Sound contents |
+|---|---|
+| `HITE_sfx.acb` | All three retro games |
+| `STH1_sfx.acb` | Sonic 1 (and three of Sonic 2's jingles) |
+| `STH1_music.acb` | Sonic 1 (and three of Sonic 2's jingles) |
+| `STH1_music.awb` | Sonic 1 (and three of Sonic 2's jingles) |
+| `STH2_sfx.acb` | Sonic 2 |
+| `STH2_music.acb` | Sonic 2 |
+| `STH2_music.awb` | Sonic 2 |
+| `SCD_sfx.acb` | Sonic CD |
+| `SCD_music.acb` | Sonic CD |
+| `SCD_music.awb` | Sonic CD |
+
+Remaining audio files from Sonic Origins are currently unused by this project.
+
 The game RSDK files can can be sourced as following:
 
 | Pack | Where it comes from |
