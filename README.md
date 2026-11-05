@@ -48,19 +48,43 @@ retro/
 | soniccd-classic.rsdk
 | soniccd-origins.rsdk
 ```
-And can be sourced as following:
+Sonic Mania Decompilation Plus also support converting the sound files directly from Sonic Origins for its version of the retro games. The original sound files can be sourced from Sonic Origins's installation folder in `image/x64/raw/sound` and should be places in `retro/origins` and can be converted in the overlay menu (`tab` / `select button` / `back button` -> `Settings` -> `Convert Sonic Origins audio`). To be clear, with the sound files, the structure is as follows:
+
+```
+Data.rsk
+retro/
+| sonic1-classic.rsdk
+| sonic1-origins.rsdk
+| sonic2-classic.rsdk
+| sonic2-origins.rsdk
+| soniccd-classic.rsdk
+| soniccd-origins.rsdk
+| origins/
+| | HITE_sfx.acb
+| | STH1_sfx.acb
+| | STH1_music.acb
+| | STH1_music.awb
+| | STH2_sfx.acb
+| | STH2_music.acb
+| | STH2_music.awb
+| | SCD_sfx.acb
+| | SCD_music.acb
+| | SCD_music.awb
+```
+
+The game RSDK files can can be sourced as following:
 
 | Pack | Where it comes from |
 |---|---|
 | Sonic Origins | `Sonic1u.rsdk`, `Sonic2u.rsdk`, `SonicCDu.rsdk` from the game's install folder (`retro`) |
-| Earlier release | Sonic 1 and 2 (2013): `Data.rsdk` (Android: `Data.rsdk.xmf` in the APK). Sonic CD (2011): `Data.rsdk.xmf` from the mobile app's APK, or `Data.rsdk` from Steam |
+| Earlier release | Sonic 1 and 2 (2013): `Data.rsdk` (Android: `Data.rsdk.xmf` in the APK, you can decompress it with tools like 7zip). Sonic CD (2011): `Data.rsdk.xmf` from the mobile app's APK, or `Data.rsdk` from Steam |
 
 How each game plays depends on what you upload:
 
 | Packs | Result |
 |---|---|
-| Origins + earlier release | The Origins game, with the earlier release's music and sound effects. The sounds Origins added (Drop Dash, Knuckles' and Amy's moves) come from Sonic Mania when it is installed, otherwise they are silent |
-| Origins only | The Origins game. Origins keeps its audio outside these packs, so without Sonic Mania it is silent; with it, see **Sound from Sonic Mania** below |
+| Origins only | The Origins game. Origins keeps its audio outside these packs, so without Sonic Mania or the audio packs, it is silent; with Sonic Mania aline, see **Sound from Sonic Mania** below |
+| Origins + earlier release | The Origins game, with the earlier release's music and sound effects. The sounds Origins added (Drop Dash, Knuckles' and Amy's moves) come from Sonic Mania when it is installed, otherwise they are silent if Sonic Origins audio packs aren't present and converted. If they are, they are used instead of the earlier releases |
 | Earlier release only | Sonic 1 and 2: that release. Sonic CD: the mobile pack is the 2011 game, with its own menus, save slots and Time Attack. The Steam pack can't be played alone (its scripts are stored the way the PC build named them, which the engine doesn't load); it only adds sound to the Origins game |
 
 - **Sound from Sonic Mania.** With Sonic Mania's `Data.rsdk` installed, whatever music or
