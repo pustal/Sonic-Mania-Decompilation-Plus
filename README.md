@@ -48,7 +48,41 @@ retro/
 | soniccd-classic.rsdk
 | soniccd-origins.rsdk
 ```
-Sonic Mania Decompilation Plus also support converting the sound files directly from Sonic Origins for its version of the retro games. The original sound files can be sourced from Sonic Origins's installation folder in `image/x64/raw/sound` and should be places in `retro/origins` and can be converted in the overlay menu (`tab` / `select button` / `back button` -> `Settings` -> `Convert Sonic Origins audio`). To be clear, with the sound files, the structure is as follows:
+Sonic Mania Decompilation Plus also support converting the sound files directly from Sonic Origins for its version of the retro games. The original sound files can be sourced from Sonic Origins's installation folder in `image/x64/raw/sound` and should be places in `retro/origins` and can be converted in the overlay menu (`tab` / `select button` / `back button` -> `Settings` -> `Convert Sonic Origins audio`).
+
+Audio files have the following contents:
+
+| File | Sound contents |
+|---|---|
+| `HITE_sfx.acb` | All three retro games |
+| `STH1_sfx.acb` | Sonic 1 (and three of Sonic 2's jingles) |
+| `STH1_music.acb` | Sonic 1 (and three of Sonic 2's jingles) |
+| `STH1_music.awb` | Sonic 1 (and three of Sonic 2's jingles) |
+| `STH2_sfx.acb` | Sonic 2 |
+| `STH2_music.acb` | Sonic 2 |
+| `STH2_music.awb` | Sonic 2 |
+| `SCD_sfx.acb` | Sonic CD |
+| `SCD_music.acb` | Sonic CD |
+| `SCD_music.awb` | Sonic CD |
+
+As well as supporting the following video files from Sonic Origins with the following contents:
+
+| File | Video contents |
+|---|---|
+| `sonicteam_logo.usm` |	all three games (the Sonic Team logo) |
+| `hite_sonic1_intro.usm` |	Sonic 1 |
+| `hite_sonic1_outro.usm` |	Sonic 1 |
+| `hite_sonic2_intro.usm` |	Sonic 2 |
+| `hite_sonic2_outro.usm` |	Sonic 2 |
+| `soniccd_op.usm` |	Sonic CD |
+| `cd_ed_good.usm` |	Sonic CD |
+| `cd_ed_bad.usm` |	Sonic CD |
+| `hite_soniccd_intro.usm` |_intro.usm	Sonic CD |
+| `hite_soniccd_outro.usm` |_outro.usm	Sonic CD |
+
+Remaining audio and vídeo files from Sonic Origins are currently unused by this project.
+
+To be clear, with the vídeo and sound files, the structure is as follows:
 
 ```
 Data.rsk
@@ -70,24 +104,17 @@ retro/
 | | SCD_sfx.acb
 | | SCD_music.acb
 | | SCD_music.awb
+| | sonicteam_logo.usm
+| | hite_sonic1_intro.usm
+| | hite_sonic1_outro.usm
+| | hite_sonic2_intro.usm
+| | hite_sonic2_outro.usm
+| | soniccd_op.usm
+| | cd_ed_good.usm
+| | cd_ed_bad.usm
+| | hite_soniccd_intro.usm
+| | hite_soniccd_outro.usm
 ```
-
-Audio files have the following contents:
-
-| File | Sound contents |
-|---|---|
-| `HITE_sfx.acb` | All three retro games |
-| `STH1_sfx.acb` | Sonic 1 (and three of Sonic 2's jingles) |
-| `STH1_music.acb` | Sonic 1 (and three of Sonic 2's jingles) |
-| `STH1_music.awb` | Sonic 1 (and three of Sonic 2's jingles) |
-| `STH2_sfx.acb` | Sonic 2 |
-| `STH2_music.acb` | Sonic 2 |
-| `STH2_music.awb` | Sonic 2 |
-| `SCD_sfx.acb` | Sonic CD |
-| `SCD_music.acb` | Sonic CD |
-| `SCD_music.awb` | Sonic CD |
-
-Remaining audio files from Sonic Origins are currently unused by this project.
 
 The game RSDK files can can be sourced as following:
 
