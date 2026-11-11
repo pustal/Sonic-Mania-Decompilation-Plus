@@ -242,6 +242,12 @@ Finally, follow the [compilation steps below](#compiling) using `-DCMAKE_TOOLCHA
 
 #### (make sure to [install GL shaders!](#q-why-arent-videosfilters-working-while-using-gl))
 
+### Wii, Wii U and PlayStation Vita
+These link the game into the engine (`-DGAME_STATIC=ON`). Install the toolchain and libraries listed in [RSDKv5 Decompilation Plus's README](https://github.com/pustal/RSDKv5-Decompilation-Plus#wii), then follow the [compilation steps below](#compiling) with these arguments for `cmake -B build`:
+- **Wii:** `-DCMAKE_TOOLCHAIN_FILE=/opt/devkitpro/cmake/Wii.cmake -DPLATFORM=NintendoWii -DGAME_STATIC=ON` (gives `RetroEngine.dol`, the Homebrew Channel's `boot.dol`)
+- **Wii U:** `-DCMAKE_TOOLCHAIN_FILE=/opt/devkitpro/cmake/WiiU.cmake -DPLATFORM=NintendoWiiU -DGAME_STATIC=ON` (gives `RetroEngine.wuhb`)
+- **Vita:** `-DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake -DPLATFORM=PlayStationVita -DGAME_STATIC=ON` (gives `RSDKv5U.vpk`)
+
 ### Android
 **Ensure you clone the repo recursively,** then follow the RSDK build instructions [here.](https://github.com/RSDKModding/RSDKv5-Decompilation/blob/master/dependencies/android/README.md)
 
@@ -291,7 +297,7 @@ The only directly supported platforms are those listed above. Since Mania is ver
 
 Check my [SonicWebMania](https://github.com/pustal/SonicWebMania) project for a WebOS port.
 
-However, there are a multitude of ports listed in the **[RSDKv5 repository.](https://github.com/RSDKModding/RSDKv5-Decompilation)**. Note that these are ports of the original RSDKv5 and Sonic Mania Decompilations and not this Plus version.
+However, there are a multitude of ports listed in the **[RSDKv5 repository.](https://github.com/RSDKModding/RSDKv5-Decompilation)**. Note that these are ports of the original RSDKv5 and Sonic Mania Decompilations and not this Plus version (the Wii, Wii U and Vita ports are part of this one, see above).
 
 # FAQ
 ### Q: Why aren't videos/filters working while using GL?
