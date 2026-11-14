@@ -32,7 +32,8 @@ This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv
 * the **Plus DLC off by default**, as the decompilation's licence asks of every build: Sonic Mania Plus (Encore mode, Mighty, Ray...) and Sonic Origins Plus (Amy, and Knuckles in Sonic CD). If you own them, turn them on in the Plus menu's Settings (**Plus DLC**, press OK twice; the game restarts) or with `plusDLC=y` under `[Game]` in `Settings.ini`;
 * **save slots and Sonic Origins' modes** (Anniversary, Classic, Mirror, Boss Rush) and coins;
 * **Sonic Mania's music and sounds** filling what the retro packs lack (the Origins packs have no audio), and optionally **Mania's remixes** of Green Hill, Chemical Plant, Oil Ocean, Stardust Speedway and Metallic Madness even over the earlier releases' originals;
-* **touch controls on Android**: the PAD button at the top right shows a pad and buttons over the game, with an adjustable opacity.
+* **touch controls on Android**: the PAD button at the top right shows a pad and buttons over the game, with an adjustable opacity;
+* **on Windows, a resizable window** (move, resize, maximise; the picture follows, and it starts at a size that fits the screen) and **PlayStation, Nintendo and other controllers** next to Xbox ones, with their own button prompts.
 
 Put the packs in a `retro` folder next to `Data.rsdk` (`sonic1-origins.rsdk`, `sonic1-classic.rsdk`, ...): see the engine's README for the names and details. No game data is included.
 
@@ -271,6 +272,7 @@ The following cmake arguments are available when compiling:
 - `RETRO_MOD_LOADER`: Enables or disables the mod loader. Takes a boolean, defaults to `on`.
 - `RETRO_MOD_LOADER_VER`: Manually sets the mod loader version. Takes an integer, defaults to the current latest version.
 - `RETRO_PLUS`: Enables the engine's Plus features (retro games, the Plus menu, Sonic Mania's audio for the retro games). Not the Sonic Mania Plus DLC (see `RETRO_DISABLE_PLUS`). Takes a boolean, defaults to `on`.
+- `RETRO_WIN_SDL2_INPUT`: Windows, DirectX 9 and 11: reads PlayStation, Nintendo and other non-XInput controllers through SDL2, when SDL2 is found (`vcpkg install sdl2`). Takes a boolean, defaults to `on`.
 - `RETRO_SUBSYSTEM`: *Only change this if you know what you're doing.* Changes the subsystem that RSDKv5 will be built for. Defaults to the most standard subsystem for the platform.
 
 ### Sonic Mania flags
