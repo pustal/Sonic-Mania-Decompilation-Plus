@@ -78,8 +78,8 @@ As well as supporting the following video files from Sonic Origins with the foll
 | `soniccd_op.usm` |	Sonic CD |
 | `cd_ed_good.usm` |	Sonic CD |
 | `cd_ed_bad.usm` |	Sonic CD |
-| `hite_soniccd_intro.usm` |_intro.usm	Sonic CD |
-| `hite_soniccd_outro.usm` |_outro.usm	Sonic CD |
+| `hite_soniccd_intro.usm` | Sonic CD |
+| `hite_soniccd_outro.usm` | Sonic CD |
 
 Remaining audio and vídeo files from Sonic Origins are currently unused by this project.
 
