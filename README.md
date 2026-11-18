@@ -30,6 +30,7 @@ If you want to transfer your save from the official PC versions, you can just co
 This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv5-Decompilation-Plus) engine, which plays **Sonic the Hedgehog, Sonic 2 and Sonic CD** next to Sonic Mania from your own data packs (Sonic Origins' and/or the earlier releases'), with:
 * the **Plus menu** (press Select, Tab on a keyboard): switch games, achievements, settings;
 * the **Plus DLC off by default**, as the decompilation's licence asks of every build: Sonic Mania Plus (Encore mode, Mighty, Ray...) and Sonic Origins Plus (Amy, and Knuckles in Sonic CD). If you own them, turn them on in the Plus menu's Settings (**Plus DLC**, press OK twice; the game restarts) or with `plusDLC=y` under `[Game]` in `Settings.ini`;
+* **Sonic Nexus** (Christian Whitehead's 2008 fan game) in a **Fan games** section of the Games page: put its `Data.bin`, renamed `sonic-nexus.bin`, in a `fan` folder next to `Data.rsdk`. It runs on the RSDKv2 decompilation inside the engine, on every platform;
 * **save slots and Sonic Origins' modes** (Anniversary, Classic, Mirror, Boss Rush) and coins;
 * **Sonic Mania's music and sounds** filling what the retro packs lack (the Origins packs have no audio), and optionally **Mania's remixes** of Green Hill, Chemical Plant, Oil Ocean, Stardust Speedway and Metallic Madness even over the earlier releases' originals;
 * **touch controls on Android**: the PAD button at the top right shows a pad and buttons over the game, with an adjustable opacity;
@@ -52,6 +53,8 @@ retro/
 | sonic2-origins.rsdk
 | soniccd-classic.rsdk
 | soniccd-origins.rsdk
+fan/
+| sonic-nexus.bin
 ```
 Sonic Mania Decompilation Plus also support converting the sound files directly from Sonic Origins for its version of the retro games. The original sound files can be sourced from Sonic Origins's installation folder in `image/x64/raw/sound` and should be places in `retro/origins` and can be converted in the overlay menu (`tab` / `select button` / `back button` -> `Settings` -> `Convert Sonic Origins audio`).
 
