@@ -33,7 +33,8 @@ This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv
 * **save slots and Sonic Origins' modes** (Anniversary, Classic, Mirror, Boss Rush) and coins;
 * **Sonic Mania's music and sounds** filling what the retro packs lack (the Origins packs have no audio), and optionally **Mania's remixes** of Green Hill, Chemical Plant, Oil Ocean, Stardust Speedway and Metallic Madness even over the earlier releases' originals;
 * **touch controls on Android**: the PAD button at the top right shows a pad and buttons over the game, with an adjustable opacity;
-* **Android TV**: the same APK shows on the TV's home screen and plays with the remote (OK jumps, Back goes back, Play/Pause pauses), and TVs without a folder picker use the app's own folder;
+* **Android TV**: the same APK shows on the TV's home screen and plays with the remote (OK jumps, Back goes back, Play/Pause pauses);
+* **a transfer page on Android** (TVs, phones and tablets): upload the game's files, mods and saves from a phone or computer on the same network, with the address and PIN the app shows;
 * **full screen or windowed from the Plus menu** (Settings, **Display**) on Windows, macOS and Linux, next to Alt+Enter;
 * **a resizable window** on Windows, macOS and Linux (move, resize, maximise; the picture follows, and it starts at a size that fits the screen), and on Windows **PlayStation, Nintendo and other controllers** next to Xbox ones, with their own button prompts.
 
