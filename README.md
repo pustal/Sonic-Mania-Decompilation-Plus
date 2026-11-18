@@ -35,6 +35,7 @@ This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv
 * **touch controls on Android**: the PAD button at the top right shows a pad and buttons over the game, with an adjustable opacity;
 * **Android TV**: the same APK shows on the TV's home screen and plays with the remote (OK jumps, Back goes back, Play/Pause pauses);
 * **a transfer page on Android** (TVs, phones and tablets): upload the game's files, mods and saves from a phone or computer on the same network, with the address and PIN the app shows;
+* **update checks**: on Android, Check for updates in the Plus menu installs the latest release from GitHub; on Windows, macOS and Linux the game says when a newer release is out, and the Plus menu's Updates page opens its download page;
 * **full screen or windowed from the Plus menu** (Settings, **Display**) on Windows, macOS and Linux, next to Alt+Enter;
 * **a resizable window** on Windows, macOS and Linux (move, resize, maximise; the picture follows, and it starts at a size that fits the screen), and on Windows **PlayStation, Nintendo and other controllers** next to Xbox ones, with their own button prompts.
 
