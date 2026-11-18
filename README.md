@@ -35,7 +35,7 @@ This fork builds the [RSDKv5-Decompilation-Plus](https://github.com/pustal/RSDKv
 * **touch controls on Android**: the PAD button at the top right shows a pad and buttons over the game, with an adjustable opacity;
 * **Android TV**: the same APK shows on the TV's home screen and plays with the remote (OK jumps, Back goes back, Play/Pause pauses), and TVs without a folder picker use the app's own folder;
 * **full screen or windowed from the Plus menu** (Settings, **Display**) on Windows, macOS and Linux, next to Alt+Enter;
-* **on Windows, a resizable window** (move, resize, maximise; the picture follows, and it starts at a size that fits the screen) and **PlayStation, Nintendo and other controllers** next to Xbox ones, with their own button prompts.
+* **a resizable window** on Windows, macOS and Linux (move, resize, maximise; the picture follows, and it starts at a size that fits the screen), and on Windows **PlayStation, Nintendo and other controllers** next to Xbox ones, with their own button prompts.
 
 Put the packs in a `retro` folder next to `Data.rsdk` (`sonic1-origins.rsdk`, `sonic1-classic.rsdk`, ...): see the engine's README for the names and details. No game data is included.
 

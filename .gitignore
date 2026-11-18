@@ -247,3 +247,4 @@ android/local.properties
 
 *.res
 dependencies/*
+/dist
